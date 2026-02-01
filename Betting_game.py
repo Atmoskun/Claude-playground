@@ -226,6 +226,12 @@ class SimulationAnalyzer:
 
         plt.grid(axis='y', alpha=0.3, linestyle='--')
         plt.tight_layout()
+
+        # Save the figure
+        output_file = 'betting_game_results.png'
+        plt.savefig(output_file, dpi=150, bbox_inches='tight')
+        print(f"Histogram saved to: {output_file}")
+
         plt.show()
 
 
